@@ -147,7 +147,7 @@ export default function TelaCadastro() {
               <CampoDigitacao
                 aoMudarTexto={(txt) => atualizarCampo("nomeCompleto", txt)}
                 rotulo="Nome Completo"
-                placeholder="Alexandre Bicudo Mendes Silva"
+                placeholder="Nome completo"
                 valorPadrao={form.dados.nomeCompleto}
                 aoMudar={() => checarCampo("nomeCompleto")}
                 aoPerderFoco={() => checarCampo("nomeCompleto")}
@@ -157,7 +157,7 @@ export default function TelaCadastro() {
               <CampoDigitacao
                 aoMudarTexto={(txt) => atualizarCampo("cargo", txt)}
                 rotulo="Cargo"
-                placeholder="Desenvolvedor backend"
+                placeholder="Cargo atual"
                 valorPadrao={form.dados.cargo}
                 aoMudar={() => checarCampo("cargo")}
                 aoPerderFoco={() => checarCampo("cargo")}
@@ -167,7 +167,7 @@ export default function TelaCadastro() {
               <CampoDigitacao
                 aoMudarTexto={(txt) => atualizarCampo("empresa", txt)}
                 rotulo="Empresa"
-                placeholder="Fontdata tecnologia"
+                placeholder="Empresa onde trabalha"
                 valorPadrao={form.dados.empresa}
                 mensagemErro={form.erros.empresa}
               />
@@ -186,7 +186,7 @@ export default function TelaCadastro() {
               <CampoDigitacao
                 aoMudarTexto={(txt) => atualizarCampo("tecnologia", txt)}
                 rotulo="Tecnologia Favorita"
-                placeholder="Spring boot"
+                placeholder="Tecnologia principal"
                 valorPadrao={form.dados.tecnologia}
                 aoMudar={() => checarCampo("tecnologia")}
                 aoPerderFoco={() => checarCampo("tecnologia")}
